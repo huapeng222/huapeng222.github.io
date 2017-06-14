@@ -6,6 +6,11 @@
 
   </head>
   <script>
+
+      $(window).load(function(){
+            alert("正在加载");
+      });
+
       function getDeviceIPAddress(){
           var str = vwtSelf.getDeviceIPAddress();
           alert(str)

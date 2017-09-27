@@ -23,7 +23,7 @@ github_username:  huapeng222
 
 # Build settings
 markdown: kramdown
-theme: Event
+theme: minima
 gems:
   - jekyll-feed
 exclude:

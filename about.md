@@ -1,10 +1,7 @@
 ---
 layout: page
 title: 关于我
+permalink: /about/
 ---
 
-没什么好说的,就这样吧......
-
-
-
-{% include comments.html %}
+没有什么好说的,省略N个字......

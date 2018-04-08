@@ -8,7 +8,7 @@ Usage:
     {% include JB/posts_collate %}
 
   Ordering:
-    Posts are displayed in reverse chronological order.
+    文章列表 are displayed in reverse chronological order.
     For normal chronological order:
       1) Change the for loop to this:
         => 'for post in site.posts reversed'

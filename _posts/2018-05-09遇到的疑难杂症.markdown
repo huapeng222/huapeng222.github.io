@@ -1,9 +1,4 @@
----
-layout: post
-title:  "遇到的疑难杂症"
-date:   2018-05-09 11:36:00 +0800
-categories: jekyll update
----
+
 
 闲来无事,把工作中遇到过得疑难杂症写出来做下梳理:
 

@@ -1,0 +1,71 @@
+---
+layout: post
+title:  "遇到的疑难杂症"
+date:   2018-05-09 11:36:00 +0800
+categories: jekyll update
+---
+
+闲来无事,把工作中遇到过得疑难杂症写出来做下梳理:
+
+# 1,delegate weak 和 assign 问题,曾经遇到过使用assign引起crash,具体请看参考链接:
+1),http://www.cnblogs.com/max5945/p/4226995.html
+2),http://www.jianshu.com/p/398472616435
+3),http://www.jianshu.com/p/ccc31e92c664
+
+
+# 2,单例线程安全
+
+之前在线上的crash问题收集平台,发现了大量下面的报错
+
+```
+#1806 NSInvalidArgumentException
+-[NSKeyValueObservance setNetworkManager:]: unrecognized selector sent to instance
+```
+而对应的代码为
+```
++ (AddressNetworkUtil *)shareInstance {
+    if (addressNetworkUtil==nil) {
+                addressNetworkUtil = [[AddressNetworkUtil alloc] init];
+                addressNetworkUtil.networkManager = NETWORK_MANAGER;
+                addressNetworkUtil.hud = [[MBProgressUtil alloc] initWithWindowMode];
+    }
+    return addressNetworkUtil;
+}
+```
+
+crash日志崩溃指向这句代码
+```
+addressNetworkUtil.networkManager = NETWORK_MANAGER;
+```
+
+最终发现原因为多线程同时初始化单例对象,导致生成了多个对象,具体不知道什么原因导致内存地址混乱,赋值,报unrecognized selector错误
+
+
+解决办法:
+增加线程锁(这里使用的是synchronized,同样可以用其他的),
+```
++ (AddressNetworkUtil *)shareInstance {
+    if (addressNetworkUtil == nil) {
+        @synchronized(self) {
+            if (addressNetworkUtil==nil) {
+                addressNetworkUtil = [[AddressNetworkUtil alloc] init];
+                addressNetworkUtil.networkManager = NETWORK_MANAGER;
+                addressNetworkUtil.hud = [[MBProgressUtil alloc] initWithWindowMode];
+            }
+        }
+    }
+    return addressNetworkUtil;
+}
+```
+# 3,cocoapods安装问题
+
+在pod 安装后执行```pod steup```时间太久了,并且也容易下载失败,解决办法,就是去已经装过的电脑上拷贝```~/.cocoapods/```下边的```repos```文件夹拷贝到你的电脑上
+
+
+# 4,编译报错
+```
+errSecInternalComponent
+Command /usr/bin/codesign failed with exit code 1
+```
+
+解决办法,检查钥匙串中是否有重复的证书

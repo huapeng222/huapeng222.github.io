@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "疑难杂症"
+title:  "疑难杂症                                                                    "
 date:   2018-05-09 13:16:06 +0800
 categories: jekyll update
 ---

@@ -1,3 +1,9 @@
-http://example.com/2023/02/02/%E7%AC%AC%E4%B8%80%E7%AF%87MarkDown%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%8D%9A%E5%AE%A2/
-http://example.com/2023/02/02/hello-world/
-http://example.com/
+https://huapeng222.github.io/2023/02/02/Hexo+butterfly%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/
+https://huapeng222.github.io/link/index.html
+https://huapeng222.github.io/tags/index.html
+https://huapeng222.github.io/categories/index.html
+https://huapeng222.github.io/
+https://huapeng222.github.io/tags/Hexo/
+https://huapeng222.github.io/tags/%E5%8D%9A%E5%AE%A2/
+https://huapeng222.github.io/tags/github-io/
+https://huapeng222.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/

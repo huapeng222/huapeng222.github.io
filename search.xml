@@ -4,6 +4,62 @@
   
     
     <entry>
+      <title>SpringBoot 打包</title>
+      <link href="/2023/05/22/java/SpringBoot%20%E6%89%93%E5%8C%85/"/>
+      <url>/2023/05/22/java/SpringBoot%20%E6%89%93%E5%8C%85/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SpringBoot-打包"><a href="#SpringBoot-打包" class="headerlink" title="SpringBoot 打包"></a>SpringBoot 打包</h1><h3 id="引入打包插件"><a href="#引入打包插件" class="headerlink" title="引入打包插件"></a>引入打包插件</h3><p>在<code>pom.xml</code>中添加：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure><p>在maven面板中找到<code>Lifecycle/package</code>:</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305221357289.png" alt="image-20230522135711254"></p><p>双击运行，等待命令完成：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305221357423.png" alt="image-20230522135757393"></p><p>打包完成，可以在工程中找到对应的打包文件：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305221358113.png" alt="image-20230522135827081"></p><p>最后我们就可以通过命令运行：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar test-1.0-SNAPSHOT.jar</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> java入门 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SpringBoot </tag>
+            
+            <tag> java </tag>
+            
+            <tag> maven </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SpringBoot入门</title>
+      <link href="/2023/05/19/java/%E5%88%9B%E5%BB%BAmaven%E9%A1%B9%E7%9B%AE/"/>
+      <url>/2023/05/19/java/%E5%88%9B%E5%BB%BAmaven%E9%A1%B9%E7%9B%AE/</url>
+      
+        <content type="html"><![CDATA[<h3 id="创建maven项目"><a href="#创建maven项目" class="headerlink" title="创建maven项目"></a>创建maven项目</h3><p><a href="https://docs.spring.io/spring-boot/docs/current/reference/html/index.html">Spring Boot 文档</a></p><h4 id="新建项目，选择Maven："><a href="#新建项目，选择Maven：" class="headerlink" title="新建项目，选择Maven："></a>新建项目，选择Maven：</h4><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191754682.png" alt="image-20230519175447089"></p><h4 id="填入工程名字，存储路径："><a href="#填入工程名字，存储路径：" class="headerlink" title="填入工程名字，存储路径："></a>填入工程名字，存储路径：</h4><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191756201.png" alt="image-20230519175609167"></p><h4 id="引入SpringBoot插件"><a href="#引入SpringBoot插件" class="headerlink" title="引入SpringBoot插件"></a>引入SpringBoot插件</h4><p>在<code>/test/pom.xml</code>中编写：</p><p>引入spring-boot：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.7.8<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br></pre></td></tr></table></figure><p>引入依赖spring-web:</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure><p>这时候，IDE会自动编译，左侧会出现添加进去的依赖项：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191800749.png" alt="image-20230519180056702"></p><p>如果没有出现，点击IDE右侧Maven菜单：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191802428.png" alt="image-20230519180205389"></p><p>点击Reload按钮：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191802714.png" alt="image-20230519180255676"></p><h4 id="创建第一个接口"><a href="#创建第一个接口" class="headerlink" title="创建第一个接口"></a>创建第一个接口</h4><p>创建Main文件，MainAppletion.java:</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191806460.png" alt="image-20230519180631417"></p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191807285.png" alt="image-20230519180746242"></p><p>在MainApplication中顶部添加注释<code>@SpringBootApplication</code>:</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191809354.png" alt="image-20230519180924311"></p><p>添加<code>main</code>方法：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">SpringApplication.run(MainApplication.class, args);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>创建controll类：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305221118177.png" alt="image-20230522111825027"></p><p>其中<code>@RestController</code>的作用是自动引用<code>@Controller</code>和<code>@Response</code></p><h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>现在我们在<code>MainApplication</code>中运行<code>main</code>方法：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305221122862.png" alt="image-20230522112212825"></p><p>控制台打印：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305221123474.png" alt="image-20230522112309436"></p><p>其中红色部分为运行的端口，这里为<code>8080</code>(默认值)</p><p>现在我们可以在浏览器访问<code>http://localhost：8080/hello</code>查看效果：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305221124011.png" alt="image-20230522112435947"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> java入门 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SpringBoot </tag>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo 博客搭建过程</title>
       <link href="/2023/02/02/Hexo+butterfly%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/"/>
       <url>/2023/02/02/Hexo+butterfly%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</url>

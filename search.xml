@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Mac 链接iOS手机频繁闪烁</title>
+      <link href="/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/Mac%20%E9%93%BE%E6%8E%A5iOS%E6%89%8B%E6%9C%BA%E9%A2%91%E7%B9%81%E9%97%AA%E7%83%81/"/>
+      <url>/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/Mac%20%E9%93%BE%E6%8E%A5iOS%E6%89%8B%E6%9C%BA%E9%A2%91%E7%B9%81%E9%97%AA%E7%83%81/</url>
+      
+        <content type="html"><![CDATA[<p>由于现在使用的电脑是旧款Mac，使用USB连接苹果手机，一直闪烁，无法正常连接，经检查，排除数据线的问题（同样的线在其他电脑上正常），查了下资料，可以使用以下命令解决：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo killall -STOP -c usbd</span><br></pre></td></tr></table></figure><p>参考：</p><p><a href="https://blog.51cto.com/u_10624715/5270842">苹果手机连接mac后连接不稳定一直闪烁问题_51CTO博客_如何连接苹果手机热点</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mac工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mac </tag>
+            
+            <tag> iOS </tag>
+            
+            <tag> USB </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>流程图绘制方法</title>
       <link href="/2023/05/26/%E6%9D%82%E9%A1%B9/%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6%E6%96%B9%E6%B3%95/"/>
       <url>/2023/05/26/%E6%9D%82%E9%A1%B9/%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6%E6%96%B9%E6%B3%95/</url>
@@ -114,19 +143,37 @@
     </entry>
     
     
-  
-  
-    
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>Hexo 博客搭建过程</title>
+      <link href="/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+      <url>/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
       
         <content type="html"><![CDATA[]]></content>
       
+      
+      <categories>
+          
+          <category> 博客搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客 </tag>
+            
+            <tag> github.io </tag>
+            
+        </tags>
+      
     </entry>
     
+    
+  
+  
     
     
     <entry>
@@ -144,6 +191,17 @@
       <title>友情链接</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

@@ -6,7 +6,7 @@
   <link href="https://huapeng222.github.io/atom.xml" rel="self"/>
   
   <link href="https://huapeng222.github.io/"/>
-  <updated>2023-05-26T05:54:57.082Z</updated>
+  <updated>2023-05-26T07:34:12.449Z</updated>
   <id>https://huapeng222.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac 链接iOS手机频繁闪烁</title>
+    <link href="https://huapeng222.github.io/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/Mac%20%E9%93%BE%E6%8E%A5iOS%E6%89%8B%E6%9C%BA%E9%A2%91%E7%B9%81%E9%97%AA%E7%83%81/"/>
+    <id>https://huapeng222.github.io/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/Mac%20%E9%93%BE%E6%8E%A5iOS%E6%89%8B%E6%9C%BA%E9%A2%91%E7%B9%81%E9%97%AA%E7%83%81/</id>
+    <published>2023-05-26T07:28:45.077Z</published>
+    <updated>2023-05-26T07:34:12.449Z</updated>
+    
+    <content type="html"><![CDATA[<p>由于现在使用的电脑是旧款Mac，使用USB连接苹果手机，一直闪烁，无法正常连接，经检查，排除数据线的问题（同样的线在其他电脑上正常），查了下资料，可以使用以下命令解决：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo killall -STOP -c usbd</span><br></pre></td></tr></table></figure><p>参考：</p><p><a href="https://blog.51cto.com/u_10624715/5270842">苹果手机连接mac后连接不稳定一直闪烁问题_51CTO博客_如何连接苹果手机热点</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;由于现在使用的电脑是旧款Mac，使用USB连接苹果手机，一直闪烁，无法正常连接，经检查，排除数据线的问题（同样的线在其他电脑上正常），查了下资料，可以使用以下命令解决：&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td c</summary>
+      
+    
+    
+    
+    <category term="Mac工具" scheme="https://huapeng222.github.io/categories/Mac%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Mac" scheme="https://huapeng222.github.io/tags/Mac/"/>
+    
+    <category term="iOS" scheme="https://huapeng222.github.io/tags/iOS/"/>
+    
+    <category term="USB" scheme="https://huapeng222.github.io/tags/USB/"/>
+    
+  </entry>
   
   <entry>
     <title>流程图绘制方法</title>
@@ -111,6 +140,27 @@
     <summary type="html">&lt;h1 id=&quot;Hexo-博客搭建过程&quot;&gt;&lt;a href=&quot;#Hexo-博客搭建过程&quot; class=&quot;headerlink&quot; title=&quot;Hexo 博客搭建过程&quot;&gt;&lt;/a&gt;Hexo 博客搭建过程&lt;/h1&gt;&lt;p&gt;搭建参考链接：&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://lz</summary>
       
+    
+    
+    
+    <category term="博客搭建" scheme="https://huapeng222.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+    <category term="Hexo" scheme="https://huapeng222.github.io/tags/Hexo/"/>
+    
+    <category term="博客" scheme="https://huapeng222.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="github.io" scheme="https://huapeng222.github.io/tags/github-io/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 博客搭建过程</title>
+    <link href="https://huapeng222.github.io/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://huapeng222.github.io/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <published>2023-02-02T09:04:35.000Z</published>
+    <updated>2023-05-26T07:29:16.616Z</updated>
+    
     
     
     

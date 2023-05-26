@@ -74,27 +74,6 @@
 
   
   <url>
-    <loc>https://huapeng222.github.io/tags/SpringBoot/</loc>
-    <lastmod>2023-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://huapeng222.github.io/tags/java/</loc>
-    <lastmod>2023-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://huapeng222.github.io/tags/maven/</loc>
-    <lastmod>2023-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://huapeng222.github.io/tags/Hexo/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -115,17 +94,59 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://huapeng222.github.io/categories/java%E5%85%A5%E9%97%A8/</loc>
+    <loc>https://huapeng222.github.io/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
+    <loc>https://huapeng222.github.io/tags/draw-io/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/tags/SpringBoot/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/tags/java/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/tags/maven/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
+  
+  <url>
     <loc>https://huapeng222.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/categories/%E6%B5%81%E7%A8%8B%E5%9B%BE/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/categories/java%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

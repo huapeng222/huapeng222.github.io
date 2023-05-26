@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>git clone 加速</title>
+      <link href="/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/git%20clone%20%E5%8A%A0%E9%80%9F/"/>
+      <url>/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/git%20clone%20%E5%8A%A0%E9%80%9F/</url>
+      
+        <content type="html"><![CDATA[<p>访问github网页，一般来说都没问题，但是如果通过git clone 下载github中仓库的代码，动辄几k每秒的速度，实在太酸爽</p><p>解决办法：设置代理（需要科学上网）</p><h3 id="1，查看科学上网的代理断口（mac）"><a href="#1，查看科学上网的代理断口（mac）" class="headerlink" title="1，查看科学上网的代理断口（mac）"></a>1，查看科学上网的代理断口（mac）</h3><p>系统偏好设置&gt;网络&gt;高级, 如下图，我的代理端口和ip ，1087， 127.0.0.1</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305261550700.png" alt="image-20230526155036651"></p><h3 id="2，设置git-的代理端口（填入上一步获取的ip和端口）"><a href="#2，设置git-的代理端口（填入上一步获取的ip和端口）" class="headerlink" title="2，设置git 的代理端口（填入上一步获取的ip和端口）"></a>2，设置git 的代理端口（填入上一步获取的ip和端口）</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">配置 git代理配置：</span></span><br><span class="line">git config --global http.proxy http://127.0.0.1:1087</span><br><span class="line">git config --global https.proxy http://127.0.0.1:1087</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">恢复 git代理配置（不需要的时候最好恢复）</span></span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure><p>来源：</p><p><a href="https://www.jianshu.com/p/8e4fab7fde4a">mac http&amp;git代理配置 - 简书 (jianshu.com)</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mac命令 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mac </tag>
+            
+            <tag> 终端 </tag>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Mac 链接iOS手机频繁闪烁</title>
       <link href="/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/Mac%20%E9%93%BE%E6%8E%A5iOS%E6%89%8B%E6%9C%BA%E9%A2%91%E7%B9%81%E9%97%AA%E7%83%81/"/>
       <url>/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/Mac%20%E9%93%BE%E6%8E%A5iOS%E6%89%8B%E6%9C%BA%E9%A2%91%E7%B9%81%E9%97%AA%E7%83%81/</url>
@@ -37,7 +66,7 @@
       <link href="/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
       <url>/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
       
-        <content type="html"><![CDATA[<h3 id="1、给git设置代理，使git工具以及命令的网络走代理工具，实现魔法上网："><a href="#1、给git设置代理，使git工具以及命令的网络走代理工具，实现魔法上网：" class="headerlink" title="1、给git设置代理，使git工具以及命令的网络走代理工具，实现魔法上网："></a>1、给<code>git</code>设置代理，使git工具以及命令的网络走代理工具，实现魔法上网：</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">设置</span></span><br><span class="line">git config --global http.proxy http://127.0.0.1:1087</span><br><span class="line">git config --global https.proxy http://127.0.0.1:1087</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">恢复默认</span></span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure><p>文中的代理地址，需根据自己的代理工具设置，可参考：</p><h3 id="2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网："><a href="#2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网：" class="headerlink" title="2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网："></a>2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网：</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export http_proxy=http://127.0.0.1:1087</span><br><span class="line">export https_proxy=$http_proxy</span><br></pre></td></tr></table></figure><p>该命令仅在设置的终端窗口生效，如需恢复，直接关闭窗口，新建一个即可。</p><p>文中的代理地址，需根据自己的代理工具设置，可参考：</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="1、给git设置代理，使git工具以及命令的网络走代理工具，实现魔法上网："><a href="#1、给git设置代理，使git工具以及命令的网络走代理工具，实现魔法上网：" class="headerlink" title="1、给git设置代理，使git工具以及命令的网络走代理工具，实现魔法上网："></a>1、给<code>git</code>设置代理，使git工具以及命令的网络走代理工具，实现魔法上网：</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">设置</span></span><br><span class="line">git config --global http.proxy http://127.0.0.1:1087</span><br><span class="line">git config --global https.proxy http://127.0.0.1:1087</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">恢复默认</span></span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure><p>文中的代理地址，需根据自己的代理工具设置，可参考：</p><p><a href="https://huapeng222.github.io/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/git%20clone%20%E5%8A%A0%E9%80%9F/">git clone 加速</a></p><h3 id="2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网："><a href="#2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网：" class="headerlink" title="2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网："></a>2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网：</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export http_proxy=http://127.0.0.1:1087</span><br><span class="line">export https_proxy=$http_proxy</span><br></pre></td></tr></table></figure><p>该命令仅在设置的终端窗口生效，如需恢复，直接关闭窗口，新建一个即可。</p><p>文中的代理地址，需根据自己的代理工具设置，可参考：</p><p><a href="https://huapeng222.github.io/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/git%20clone%20%E5%8A%A0%E9%80%9F/">git clone 加速</a></p>]]></content>
       
       
       <categories>
@@ -118,7 +147,7 @@
     
     
     <entry>
-      <title>SpringBoot入门</title>
+      <title>创建maven项目</title>
       <link href="/2023/05/19/java/%E5%88%9B%E5%BB%BAmaven%E9%A1%B9%E7%9B%AE/"/>
       <url>/2023/05/19/java/%E5%88%9B%E5%BB%BAmaven%E9%A1%B9%E7%9B%AE/</url>
       
@@ -166,35 +195,6 @@
             <tag> 博客 </tag>
             
             <tag> github.io </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>git clone 加速</title>
-      <link href="/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/git%20clone%20%E5%8A%A0%E9%80%9F/"/>
-      <url>/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/git%20clone%20%E5%8A%A0%E9%80%9F/</url>
-      
-        <content type="html"><![CDATA[<p>访问github网页，一般来说都没问题，但是如果通过git clone 下载github中仓库的代码，动辄几k每秒的速度，实在太酸爽</p><p>解决办法：设置代理（需要科学上网）</p><h3 id="1，查看科学上网的代理断口（mac）"><a href="#1，查看科学上网的代理断口（mac）" class="headerlink" title="1，查看科学上网的代理断口（mac）"></a>1，查看科学上网的代理断口（mac）</h3><p>系统偏好设置&gt;网络&gt;高级, 如下图，我的代理端口和ip ，1087， 127.0.0.1<img src="https://cdn.nlark.com/yuque/0/2020/png/635326/1598112024931-3c754fe0-bee8-4bd2-855f-dd390bf196d0.png#align=left&display=inline&height=563&originHeight=1126&originWidth=1336&size=1696554&status=done&style=none&width=668" alt="image.png"></p><h3 id="2，设置git-的代理端口（填入上一步获取的ip和端口）"><a href="#2，设置git-的代理端口（填入上一步获取的ip和端口）" class="headerlink" title="2，设置git 的代理端口（填入上一步获取的ip和端口）"></a>2，设置git 的代理端口（填入上一步获取的ip和端口）</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">配置 git代理配置：</span></span><br><span class="line">git config --global http.proxy http://127.0.0.1:1087</span><br><span class="line">git config --global https.proxy http://127.0.0.1:1087</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">恢复 git代理配置（不需要的时候最好恢复）</span></span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure><p>来源：</p><p><a href="https://www.jianshu.com/p/8e4fab7fde4a">mac http&amp;git代理配置 - 简书 (jianshu.com)</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Mac命令 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Mac </tag>
-            
-            <tag> 终端 </tag>
-            
-            <tag> github </tag>
             
         </tags>
       

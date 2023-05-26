@@ -6,7 +6,7 @@
   <link href="https://huapeng222.github.io/atom.xml" rel="self"/>
   
   <link href="https://huapeng222.github.io/"/>
-  <updated>2023-05-26T07:34:12.449Z</updated>
+  <updated>2023-05-26T07:51:03.244Z</updated>
   <id>https://huapeng222.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git clone 加速</title>
+    <link href="https://huapeng222.github.io/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/git%20clone%20%E5%8A%A0%E9%80%9F/"/>
+    <id>https://huapeng222.github.io/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/git%20clone%20%E5%8A%A0%E9%80%9F/</id>
+    <published>2023-05-26T07:37:53.720Z</published>
+    <updated>2023-05-26T07:51:03.244Z</updated>
+    
+    <content type="html"><![CDATA[<p>访问github网页，一般来说都没问题，但是如果通过git clone 下载github中仓库的代码，动辄几k每秒的速度，实在太酸爽</p><p>解决办法：设置代理（需要科学上网）</p><h3 id="1，查看科学上网的代理断口（mac）"><a href="#1，查看科学上网的代理断口（mac）" class="headerlink" title="1，查看科学上网的代理断口（mac）"></a>1，查看科学上网的代理断口（mac）</h3><p>系统偏好设置&gt;网络&gt;高级, 如下图，我的代理端口和ip ，1087， 127.0.0.1</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305261550700.png" alt="image-20230526155036651"></p><h3 id="2，设置git-的代理端口（填入上一步获取的ip和端口）"><a href="#2，设置git-的代理端口（填入上一步获取的ip和端口）" class="headerlink" title="2，设置git 的代理端口（填入上一步获取的ip和端口）"></a>2，设置git 的代理端口（填入上一步获取的ip和端口）</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">配置 git代理配置：</span></span><br><span class="line">git config --global http.proxy http://127.0.0.1:1087</span><br><span class="line">git config --global https.proxy http://127.0.0.1:1087</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">恢复 git代理配置（不需要的时候最好恢复）</span></span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure><p>来源：</p><p><a href="https://www.jianshu.com/p/8e4fab7fde4a">mac http&amp;git代理配置 - 简书 (jianshu.com)</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;访问github网页，一般来说都没问题，但是如果通过git clone 下载github中仓库的代码，动辄几k每秒的速度，实在太酸爽&lt;/p&gt;
+&lt;p&gt;解决办法：设置代理（需要科学上网）&lt;/p&gt;
+&lt;h3 id=&quot;1，查看科学上网的代理断口（mac）&quot;&gt;&lt;a href=&quot;#1，查</summary>
+      
+    
+    
+    
+    <category term="Mac命令" scheme="https://huapeng222.github.io/categories/Mac%E5%91%BD%E4%BB%A4/"/>
+    
+    
+    <category term="Mac" scheme="https://huapeng222.github.io/tags/Mac/"/>
+    
+    <category term="终端" scheme="https://huapeng222.github.io/tags/%E7%BB%88%E7%AB%AF/"/>
+    
+    <category term="github" scheme="https://huapeng222.github.io/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>Mac 链接iOS手机频繁闪烁</title>
@@ -50,9 +80,9 @@
     <link href="https://huapeng222.github.io/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>https://huapeng222.github.io/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
     <published>2023-05-26T07:28:31.407Z</published>
-    <updated>2023-05-26T07:45:00.223Z</updated>
+    <updated>2023-05-26T07:50:52.923Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="1、给git设置代理，使git工具以及命令的网络走代理工具，实现魔法上网："><a href="#1、给git设置代理，使git工具以及命令的网络走代理工具，实现魔法上网：" class="headerlink" title="1、给git设置代理，使git工具以及命令的网络走代理工具，实现魔法上网："></a>1、给<code>git</code>设置代理，使git工具以及命令的网络走代理工具，实现魔法上网：</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">设置</span></span><br><span class="line">git config --global http.proxy http://127.0.0.1:1087</span><br><span class="line">git config --global https.proxy http://127.0.0.1:1087</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">恢复默认</span></span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure><p>文中的代理地址，需根据自己的代理工具设置，可参考：</p><h3 id="2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网："><a href="#2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网：" class="headerlink" title="2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网："></a>2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网：</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export http_proxy=http://127.0.0.1:1087</span><br><span class="line">export https_proxy=$http_proxy</span><br></pre></td></tr></table></figure><p>该命令仅在设置的终端窗口生效，如需恢复，直接关闭窗口，新建一个即可。</p><p>文中的代理地址，需根据自己的代理工具设置，可参考：</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="1、给git设置代理，使git工具以及命令的网络走代理工具，实现魔法上网："><a href="#1、给git设置代理，使git工具以及命令的网络走代理工具，实现魔法上网：" class="headerlink" title="1、给git设置代理，使git工具以及命令的网络走代理工具，实现魔法上网："></a>1、给<code>git</code>设置代理，使git工具以及命令的网络走代理工具，实现魔法上网：</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">设置</span></span><br><span class="line">git config --global http.proxy http://127.0.0.1:1087</span><br><span class="line">git config --global https.proxy http://127.0.0.1:1087</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">恢复默认</span></span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure><p>文中的代理地址，需根据自己的代理工具设置，可参考：</p><p><a href="https://huapeng222.github.io/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/git%20clone%20%E5%8A%A0%E9%80%9F/">git clone 加速</a></p><h3 id="2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网："><a href="#2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网：" class="headerlink" title="2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网："></a>2、给终端设置代码，使终端命令的网络走代理工具，实现魔法上网：</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export http_proxy=http://127.0.0.1:1087</span><br><span class="line">export https_proxy=$http_proxy</span><br></pre></td></tr></table></figure><p>该命令仅在设置的终端窗口生效，如需恢复，直接关闭窗口，新建一个即可。</p><p>文中的代理地址，需根据自己的代理工具设置，可参考：</p><p><a href="https://huapeng222.github.io/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/git%20clone%20%E5%8A%A0%E9%80%9F/">git clone 加速</a></p>]]></content>
     
     
       
@@ -128,11 +158,11 @@
   </entry>
   
   <entry>
-    <title>SpringBoot入门</title>
+    <title>创建maven项目</title>
     <link href="https://huapeng222.github.io/2023/05/19/java/%E5%88%9B%E5%BB%BAmaven%E9%A1%B9%E7%9B%AE/"/>
     <id>https://huapeng222.github.io/2023/05/19/java/%E5%88%9B%E5%BB%BAmaven%E9%A1%B9%E7%9B%AE/</id>
     <published>2023-05-19T10:16:16.266Z</published>
-    <updated>2023-05-22T06:24:32.244Z</updated>
+    <updated>2023-05-26T07:51:18.561Z</updated>
     
     <content type="html"><![CDATA[<h3 id="创建maven项目"><a href="#创建maven项目" class="headerlink" title="创建maven项目"></a>创建maven项目</h3><p><a href="https://docs.spring.io/spring-boot/docs/current/reference/html/index.html">Spring Boot 文档</a></p><h4 id="新建项目，选择Maven："><a href="#新建项目，选择Maven：" class="headerlink" title="新建项目，选择Maven："></a>新建项目，选择Maven：</h4><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191754682.png" alt="image-20230519175447089"></p><h4 id="填入工程名字，存储路径："><a href="#填入工程名字，存储路径：" class="headerlink" title="填入工程名字，存储路径："></a>填入工程名字，存储路径：</h4><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191756201.png" alt="image-20230519175609167"></p><h4 id="引入SpringBoot插件"><a href="#引入SpringBoot插件" class="headerlink" title="引入SpringBoot插件"></a>引入SpringBoot插件</h4><p>在<code>/test/pom.xml</code>中编写：</p><p>引入spring-boot：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.7.8<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br></pre></td></tr></table></figure><p>引入依赖spring-web:</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure><p>这时候，IDE会自动编译，左侧会出现添加进去的依赖项：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191800749.png" alt="image-20230519180056702"></p><p>如果没有出现，点击IDE右侧Maven菜单：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191802428.png" alt="image-20230519180205389"></p><p>点击Reload按钮：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191802714.png" alt="image-20230519180255676"></p><h4 id="创建第一个接口"><a href="#创建第一个接口" class="headerlink" title="创建第一个接口"></a>创建第一个接口</h4><p>创建Main文件，MainAppletion.java:</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191806460.png" alt="image-20230519180631417"></p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191807285.png" alt="image-20230519180746242"></p><p>在MainApplication中顶部添加注释<code>@SpringBootApplication</code>:</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305191809354.png" alt="image-20230519180924311"></p><p>添加<code>main</code>方法：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">SpringApplication.run(MainApplication.class, args);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>创建controll类：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305221118177.png" alt="image-20230522111825027"></p><p>其中<code>@RestController</code>的作用是自动引用<code>@Controller</code>和<code>@Response</code></p><h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>现在我们在<code>MainApplication</code>中运行<code>main</code>方法：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305221122862.png" alt="image-20230522112212825"></p><p>控制台打印：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305221123474.png" alt="image-20230522112309436"></p><p>其中红色部分为运行的端口，这里为<code>8080</code>(默认值)</p><p>现在我们可以在浏览器访问<code>http://localhost：8080/hello</code>查看效果：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305221124011.png" alt="image-20230522112435947"></p>]]></content>
     
@@ -158,7 +188,7 @@
     <link href="https://huapeng222.github.io/2023/02/02/Hexo+butterfly%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/"/>
     <id>https://huapeng222.github.io/2023/02/02/Hexo+butterfly%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</id>
     <published>2023-02-02T09:04:35.000Z</published>
-    <updated>2023-05-22T06:56:56.550Z</updated>
+    <updated>2023-05-26T07:51:07.146Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Hexo-博客搭建过程"><a href="#Hexo-博客搭建过程" class="headerlink" title="Hexo 博客搭建过程"></a>Hexo 博客搭建过程</h1><p>搭建参考链接：</p><p><a href="https://lzw-github.github.io/articles/GitHub%E6%89%98%E7%AE%A1Hexo%E5%8D%9A%E5%AE%A2%20Butterfly%E4%B8%BB%E9%A2%98%E5%85%A8%E8%BF%87%E7%A8%8B/">GitHub托管Hexo博客搭建全过程 | WinstonLi的个人博客 (lzw-github.github.io)</a></p><p><a href="https://blog.csdn.net/weixin_44186409/article/details/106256493">butterfly主题修改_bt-sonny的博客-CSDN博客</a></p><p>其中执行<code>hexo d</code>部署到github的时候，密码需要用到github的token，token 的申请参考链接：<a href="https://blog.csdn.net/qq_41646249/article/details/119777084">github Token申请</a></p><p>Hexo 文档：<a href="https://butterfly.js.org/">Butterfly</a></p><h3 id="常用命令："><a href="#常用命令：" class="headerlink" title="常用命令："></a>常用命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo d <span class="comment">#本地运行</span></span><br><span class="line">hexo clean <span class="comment">#清空缓存</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d <span class="comment">#清空，编译，部署</span></span><br></pre></td></tr></table></figure><h3 id="存放文档："><a href="#存放文档：" class="headerlink" title="存放文档："></a>存放文档：</h3><p>拷贝md文件到<code>/blog/source/_posts</code>下，支持创建文件夹：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202305221429165.png" alt="image-20230522142944112"></p><h3 id="文章属性："><a href="#文章属性：" class="headerlink" title="文章属性："></a>文章属性：</h3><p>可以在md文档头部添加注释来指定文件标题，标签，分类，时间等信息：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 博客搭建过程</span><br><span class="line">date: 2023-02-02 17:04:35</span><br><span class="line">tags: [Hexo,博客,github.io]</span><br><span class="line"><span class="section">categories: 博客搭建</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>]]></content>
     
@@ -179,36 +209,6 @@
     <category term="博客" scheme="https://huapeng222.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="github.io" scheme="https://huapeng222.github.io/tags/github-io/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git clone 加速</title>
-    <link href="https://huapeng222.github.io/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/git%20clone%20%E5%8A%A0%E9%80%9F/"/>
-    <id>https://huapeng222.github.io/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/git%20clone%20%E5%8A%A0%E9%80%9F/</id>
-    <published>2023-02-02T09:04:35.000Z</published>
-    <updated>2023-05-26T07:39:48.514Z</updated>
-    
-    <content type="html"><![CDATA[<p>访问github网页，一般来说都没问题，但是如果通过git clone 下载github中仓库的代码，动辄几k每秒的速度，实在太酸爽</p><p>解决办法：设置代理（需要科学上网）</p><h3 id="1，查看科学上网的代理断口（mac）"><a href="#1，查看科学上网的代理断口（mac）" class="headerlink" title="1，查看科学上网的代理断口（mac）"></a>1，查看科学上网的代理断口（mac）</h3><p>系统偏好设置&gt;网络&gt;高级, 如下图，我的代理端口和ip ，1087， 127.0.0.1<img src="https://cdn.nlark.com/yuque/0/2020/png/635326/1598112024931-3c754fe0-bee8-4bd2-855f-dd390bf196d0.png#align=left&display=inline&height=563&originHeight=1126&originWidth=1336&size=1696554&status=done&style=none&width=668" alt="image.png"></p><h3 id="2，设置git-的代理端口（填入上一步获取的ip和端口）"><a href="#2，设置git-的代理端口（填入上一步获取的ip和端口）" class="headerlink" title="2，设置git 的代理端口（填入上一步获取的ip和端口）"></a>2，设置git 的代理端口（填入上一步获取的ip和端口）</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">配置 git代理配置：</span></span><br><span class="line">git config --global http.proxy http://127.0.0.1:1087</span><br><span class="line">git config --global https.proxy http://127.0.0.1:1087</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">恢复 git代理配置（不需要的时候最好恢复）</span></span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure><p>来源：</p><p><a href="https://www.jianshu.com/p/8e4fab7fde4a">mac http&amp;git代理配置 - 简书 (jianshu.com)</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;访问github网页，一般来说都没问题，但是如果通过git clone 下载github中仓库的代码，动辄几k每秒的速度，实在太酸爽&lt;/p&gt;
-&lt;p&gt;解决办法：设置代理（需要科学上网）&lt;/p&gt;
-&lt;h3 id=&quot;1，查看科学上网的代理断口（mac）&quot;&gt;&lt;a href=&quot;#1，查</summary>
-      
-    
-    
-    
-    <category term="Mac命令" scheme="https://huapeng222.github.io/categories/Mac%E5%91%BD%E4%BB%A4/"/>
-    
-    
-    <category term="Mac" scheme="https://huapeng222.github.io/tags/Mac/"/>
-    
-    <category term="终端" scheme="https://huapeng222.github.io/tags/%E7%BB%88%E7%AB%AF/"/>
-    
-    <category term="github" scheme="https://huapeng222.github.io/tags/github/"/>
     
   </entry>
   

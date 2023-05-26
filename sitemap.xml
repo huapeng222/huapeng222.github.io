@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://huapeng222.github.io/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/Mac%20%E9%93%BE%E6%8E%A5iOS%E6%89%8B%E6%9C%BA%E9%A2%91%E7%B9%81%E9%97%AA%E7%83%81/</loc>
+    <loc>https://huapeng222.github.io/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     
     <lastmod>2023-05-26</lastmod>
     
@@ -11,7 +11,16 @@
   </url>
   
   <url>
-    <loc>https://huapeng222.github.io/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://huapeng222.github.io/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/git%20clone%20%E5%8A%A0%E9%80%9F/</loc>
+    
+    <lastmod>2023-05-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/Mac%20%E9%93%BE%E6%8E%A5iOS%E6%89%8B%E6%9C%BA%E9%A2%91%E7%B9%81%E9%97%AA%E7%83%81/</loc>
     
     <lastmod>2023-05-26</lastmod>
     
@@ -155,6 +164,27 @@
   </url>
   
   <url>
+    <loc>https://huapeng222.github.io/tags/%E7%BB%88%E7%AB%AF/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/tags/shell/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/tags/github/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://huapeng222.github.io/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -186,6 +216,13 @@
   
   <url>
     <loc>https://huapeng222.github.io/categories/Mac%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/categories/Mac%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

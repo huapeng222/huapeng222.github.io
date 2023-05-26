@@ -1,5 +1,6 @@
+https://huapeng222.github.io/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/
+https://huapeng222.github.io/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/git%20clone%20%E5%8A%A0%E9%80%9F/
 https://huapeng222.github.io/2023/05/26/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/Mac%20%E9%93%BE%E6%8E%A5iOS%E6%89%8B%E6%9C%BA%E9%A2%91%E7%B9%81%E9%97%AA%E7%83%81/
-https://huapeng222.github.io/2023/02/02/mac%E6%97%A5%E5%B8%B8%E5%91%BD%E4%BB%A4%E9%9B%86/%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/
 https://huapeng222.github.io/2023/05/26/%E6%9D%82%E9%A1%B9/%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6%E6%96%B9%E6%B3%95/
 https://huapeng222.github.io/2023/02/02/Hexo+butterfly%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/
 https://huapeng222.github.io/2023/05/19/java/%E5%88%9B%E5%BB%BAmaven%E9%A1%B9%E7%9B%AE/
@@ -17,9 +18,13 @@ https://huapeng222.github.io/tags/maven/
 https://huapeng222.github.io/tags/Mac/
 https://huapeng222.github.io/tags/iOS/
 https://huapeng222.github.io/tags/USB/
+https://huapeng222.github.io/tags/%E7%BB%88%E7%AB%AF/
+https://huapeng222.github.io/tags/shell/
+https://huapeng222.github.io/tags/github/
 https://huapeng222.github.io/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/
 https://huapeng222.github.io/tags/draw-io/
 https://huapeng222.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/
 https://huapeng222.github.io/categories/java%E5%85%A5%E9%97%A8/
 https://huapeng222.github.io/categories/Mac%E5%B7%A5%E5%85%B7/
+https://huapeng222.github.io/categories/Mac%E5%91%BD%E4%BB%A4/
 https://huapeng222.github.io/categories/%E6%B5%81%E7%A8%8B%E5%9B%BE/

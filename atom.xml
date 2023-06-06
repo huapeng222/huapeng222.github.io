@@ -6,7 +6,7 @@
   <link href="https://huapeng222.github.io/atom.xml" rel="self"/>
   
   <link href="https://huapeng222.github.io/"/>
-  <updated>2023-05-26T08:01:05.572Z</updated>
+  <updated>2023-06-06T02:48:14.273Z</updated>
   <id>https://huapeng222.github.io/</id>
   
   <author>
@@ -15,6 +15,65 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>iOS根据多个坐标点得到中心点</title>
+    <link href="https://huapeng222.github.io/2023/06/06/iOS/iOS%E6%A0%B9%E6%8D%AE%E5%A4%9A%E4%B8%AA%E5%9D%90%E6%A0%87%E7%82%B9%E5%BE%97%E5%88%B0%E4%B8%AD%E5%BF%83%E7%82%B9/"/>
+    <id>https://huapeng222.github.io/2023/06/06/iOS/iOS%E6%A0%B9%E6%8D%AE%E5%A4%9A%E4%B8%AA%E5%9D%90%E6%A0%87%E7%82%B9%E5%BE%97%E5%88%B0%E4%B8%AD%E5%BF%83%E7%82%B9/</id>
+    <published>2023-06-06T02:50:01.000Z</published>
+    <updated>2023-06-06T02:48:14.273Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="iOS根据多个坐标点得到中心点"><a href="#iOS根据多个坐标点得到中心点" class="headerlink" title="iOS根据多个坐标点得到中心点"></a>iOS根据多个坐标点得到中心点</h3><p>示例代码如下:</p><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">func</span> <span class="title function_">getPointsCenter</span>() &#123;</span><br><span class="line">        <span class="keyword">let</span> points <span class="operator">=</span>  [</span><br><span class="line">            [<span class="number">118.72735499843424</span>, <span class="number">32.16250875496402</span>],</span><br><span class="line">            [<span class="number">118.72868071329253</span>, <span class="number">32.1622072483823</span>],</span><br><span class="line">            [<span class="number">118.72844986716387</span>, <span class="number">32.16153722994673</span>],</span><br><span class="line">            [<span class="number">118.72726266031236</span>, <span class="number">32.16188340660801</span>],</span><br><span class="line">            [<span class="number">118.72735499843424</span>, <span class="number">32.16250875496402</span>]</span><br><span class="line">        ]</span><br><span class="line">        <span class="keyword">let</span> pointCount <span class="operator">=</span> <span class="type">Double</span>(points.count)</span><br><span class="line">        <span class="keyword">var</span> <span class="type">A</span> <span class="operator">=</span> <span class="number">0.0</span></span><br><span class="line">        <span class="keyword">var</span> <span class="type">B</span> <span class="operator">=</span> <span class="number">0.0</span></span><br><span class="line">        <span class="keyword">var</span> <span class="type">C</span> <span class="operator">=</span> <span class="number">0.0</span></span><br><span class="line">        <span class="keyword">for</span> point <span class="keyword">in</span> points &#123;</span><br><span class="line">            <span class="keyword">let</span> lon <span class="operator">=</span> point[<span class="number">0</span>] <span class="operator">*</span> <span class="type">Double</span>.pi <span class="operator">/</span> <span class="number">180</span></span><br><span class="line">            <span class="keyword">let</span> lat <span class="operator">=</span> point[<span class="number">1</span>] <span class="operator">*</span> <span class="type">Double</span>.pi <span class="operator">/</span> <span class="number">180</span></span><br><span class="line">            <span class="keyword">var</span> x <span class="operator">=</span> <span class="number">0.0</span></span><br><span class="line">            <span class="keyword">var</span> y <span class="operator">=</span> <span class="number">0.0</span></span><br><span class="line">            <span class="keyword">var</span> z <span class="operator">=</span> <span class="number">0.0</span></span><br><span class="line">            x <span class="operator">=</span> cos(lat) <span class="operator">*</span> cos(lon)</span><br><span class="line">            y <span class="operator">=</span> cos(lat) <span class="operator">*</span> sin(lon)</span><br><span class="line">            z <span class="operator">=</span> sin(lat)</span><br><span class="line">            <span class="type">A</span> <span class="operator">+=</span> x</span><br><span class="line">            <span class="type">B</span> <span class="operator">+=</span> y</span><br><span class="line">            <span class="type">C</span> <span class="operator">+=</span> z</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">A</span> <span class="operator">=</span> <span class="type">A</span> <span class="operator">/</span> pointCount</span><br><span class="line">        <span class="type">B</span> <span class="operator">=</span> <span class="type">B</span> <span class="operator">/</span> pointCount</span><br><span class="line">        <span class="type">C</span> <span class="operator">=</span> <span class="type">C</span> <span class="operator">/</span> pointCount</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">let</span> tmp_lon <span class="operator">=</span> atan2(<span class="type">B</span>, <span class="type">A</span>)</span><br><span class="line">        <span class="keyword">let</span> tmp_lat <span class="operator">=</span> atan2(<span class="type">C</span>, sqrt(<span class="type">A</span> <span class="operator">*</span> <span class="type">A</span> <span class="operator">+</span> <span class="type">B</span> <span class="operator">*</span> <span class="type">B</span>))</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;中心点:<span class="subst">\(tmp_lat <span class="operator">*</span> <span class="number">180</span> <span class="operator">/</span> Double.pi)</span>, <span class="subst">\(tmp_lon <span class="operator">*</span> <span class="number">180</span> <span class="operator">/</span> Double.pi)</span>&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>验证方法:<a href="https://lbs.amap.com/demo/javascript-api/example/marker/adaptive-show-multiple-markers">自适应显示多个点标记-点标记-示例中心-JS API 示例 | 高德地图API (amap.com)</a></p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202306061047882.png" alt="image-20230606104714813"></p><p>参考链接:</p><p><a href="https://blog.csdn.net/michaelzhouh/article/details/107380025">根据多个坐标点得到中心点，适用于腾讯地图、百度地图、高德地图等等_求多个坐标点的中心点_michaelzhouh的博客-CSDN博客</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;iOS根据多个坐标点得到中心点&quot;&gt;&lt;a href=&quot;#iOS根据多个坐标点得到中心点&quot; class=&quot;headerlink&quot; title=&quot;iOS根据多个坐标点得到中心点&quot;&gt;&lt;/a&gt;iOS根据多个坐标点得到中心点&lt;/h3&gt;&lt;p&gt;示例代码如下:&lt;/p&gt;
+&lt;figur</summary>
+      
+    
+    
+    
+    <category term="iOS" scheme="https://huapeng222.github.io/categories/iOS/"/>
+    
+    
+    <category term="坐标中心点" scheme="https://huapeng222.github.io/tags/%E5%9D%90%E6%A0%87%E4%B8%AD%E5%BF%83%E7%82%B9/"/>
+    
+    <category term="swift" scheme="https://huapeng222.github.io/tags/swift/"/>
+    
+    <category term="iOS" scheme="https://huapeng222.github.io/tags/iOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>百度网盘魔法</title>
+    <link href="https://huapeng222.github.io/2023/05/31/%E6%9D%82%E9%A1%B9/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E9%AD%94%E6%B3%95/"/>
+    <id>https://huapeng222.github.io/2023/05/31/%E6%9D%82%E9%A1%B9/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E9%AD%94%E6%B3%95/</id>
+    <published>2023-05-31T05:32:17.746Z</published>
+    <updated>2023-05-31T05:35:00.261Z</updated>
+    
+    <content type="html"><![CDATA[<p>为了突破百度网盘下载速度，我们可以选择需要下载的文件后缀为apk，使用apk预览来达到快速下载的目的。</p><p>下载完成后，我们可以在本地文件中找到，具体路径：</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/storage/emulated/0/Android/data/com.baidu.netdisk/cache/preview/BaiduNetdisk/你下载的文件所在目录</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;为了突破百度网盘下载速度，我们可以选择需要下载的文件后缀为apk，使用apk预览来达到快速下载的目的。&lt;/p&gt;
+&lt;p&gt;下载完成后，我们可以在本地文件中找到，具体路径：&lt;/p&gt;
+&lt;figure class=&quot;highlight tex&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td clas</summary>
+      
+    
+    
+    
+    <category term="百度网盘" scheme="https://huapeng222.github.io/categories/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/"/>
+    
+    
+    <category term="百度云" scheme="https://huapeng222.github.io/tags/%E7%99%BE%E5%BA%A6%E4%BA%91/"/>
+    
+    <category term="百度云盘" scheme="https://huapeng222.github.io/tags/%E7%99%BE%E5%BA%A6%E4%BA%91%E7%9B%98/"/>
+    
+    <category term="百度网盘" scheme="https://huapeng222.github.io/tags/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/"/>
+    
+  </entry>
   
   <entry>
     <title>git clone 加速</title>
@@ -67,9 +126,9 @@
     <category term="Mac工具" scheme="https://huapeng222.github.io/categories/Mac%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="Mac" scheme="https://huapeng222.github.io/tags/Mac/"/>
-    
     <category term="iOS" scheme="https://huapeng222.github.io/tags/iOS/"/>
+    
+    <category term="Mac" scheme="https://huapeng222.github.io/tags/Mac/"/>
     
     <category term="USB" scheme="https://huapeng222.github.io/tags/USB/"/>
     

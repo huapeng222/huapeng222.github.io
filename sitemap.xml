@@ -209,14 +209,14 @@
   </url>
   
   <url>
-    <loc>https://huapeng222.github.io/tags/Mac/</loc>
+    <loc>https://huapeng222.github.io/tags/ruby/</loc>
     <lastmod>2023-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://huapeng222.github.io/tags/USB/</loc>
+    <loc>https://huapeng222.github.io/tags/Mac/</loc>
     <lastmod>2023-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -237,6 +237,13 @@
   </url>
   
   <url>
+    <loc>https://huapeng222.github.io/tags/USB/</loc>
+    <lastmod>2023-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://huapeng222.github.io/tags/shell/</loc>
     <lastmod>2023-10-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -244,7 +251,14 @@
   </url>
   
   <url>
-    <loc>https://huapeng222.github.io/tags/ruby/</loc>
+    <loc>https://huapeng222.github.io/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/</loc>
+    <lastmod>2023-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/tags/draw-io/</loc>
     <lastmod>2023-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -285,20 +299,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://huapeng222.github.io/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/</loc>
-    <lastmod>2023-10-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://huapeng222.github.io/tags/draw-io/</loc>
-    <lastmod>2023-10-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -323,7 +323,7 @@
   </url>
   
   <url>
-    <loc>https://huapeng222.github.io/categories/Mac%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://huapeng222.github.io/categories/ruby/</loc>
     <lastmod>2023-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -337,7 +337,14 @@
   </url>
   
   <url>
-    <loc>https://huapeng222.github.io/categories/ruby/</loc>
+    <loc>https://huapeng222.github.io/categories/Mac%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2023-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/categories/%E6%B5%81%E7%A8%8B%E5%9B%BE/</loc>
     <lastmod>2023-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -352,13 +359,6 @@
   
   <url>
     <loc>https://huapeng222.github.io/categories/%E6%B8%B8%E6%88%8F%E3%80%81%E9%92%A2%E9%93%81%E9%9B%84%E5%BF%834/</loc>
-    <lastmod>2023-10-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://huapeng222.github.io/categories/%E6%B5%81%E7%A8%8B%E5%9B%BE/</loc>
     <lastmod>2023-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

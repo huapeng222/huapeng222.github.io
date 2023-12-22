@@ -6,7 +6,7 @@
   <link href="https://huapeng222.github.io/atom.xml" rel="self"/>
   
   <link href="https://huapeng222.github.io/"/>
-  <updated>2023-10-30T05:20:56.380Z</updated>
+  <updated>2023-12-19T06:26:44.219Z</updated>
   <id>https://huapeng222.github.io/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RN for mac开发记录</title>
+    <link href="https://huapeng222.github.io/2023/12/19/RN/RN%20for%20mac%20%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/"/>
+    <id>https://huapeng222.github.io/2023/12/19/RN/RN%20for%20mac%20%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</id>
+    <published>2023-12-19T05:16:21.000Z</published>
+    <updated>2023-12-19T06:26:44.219Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1、设置TextInput高亮颜色"><a href="#1、设置TextInput高亮颜色" class="headerlink" title="1、设置TextInput高亮颜色"></a>1、设置<code>TextInput</code>高亮颜色</h3><p>设置<code>enableFocusRing</code>即刻，<code>Bool</code>值</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="title class_">TextInput</span></span><br><span class="line">style=&#123;&#123;</span><br><span class="line">        <span class="attr">fontSize</span>: <span class="number">16</span>,</span><br><span class="line">        <span class="attr">alignItems</span>: <span class="string">&#x27;center&#x27;</span>,</span><br><span class="line">        <span class="attr">justifyContent</span>: <span class="string">&#x27;center&#x27;</span>,</span><br><span class="line">        <span class="attr">textAlignVertical</span>: <span class="string">&#x27;center&#x27;</span>,</span><br><span class="line">        <span class="attr">padding</span>: <span class="number">10</span>,</span><br><span class="line">       &#125;&#125;</span><br><span class="line">placeholder=&#123;<span class="string">&#x27;请输入地址&#x27;</span>&#125;</span><br><span class="line">enableFocusRing=&#123;<span class="literal">false</span>&#125;</span><br><span class="line">value=&#123;url&#125;</span><br><span class="line">onChangeText=&#123;<span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line"><span class="title function_">setUrl</span>(e);</span><br><span class="line">&#125;&#125;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;1、设置TextInput高亮颜色&quot;&gt;&lt;a href=&quot;#1、设置TextInput高亮颜色&quot; class=&quot;headerlink&quot; title=&quot;1、设置TextInput高亮颜色&quot;&gt;&lt;/a&gt;1、设置&lt;code&gt;TextInput&lt;/code&gt;高亮颜色&lt;/h3&gt;</summary>
+      
+    
+    
+    
+    <category term="mac开发" scheme="https://huapeng222.github.io/categories/mac%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="mac" scheme="https://huapeng222.github.io/tags/mac/"/>
+    
+    <category term="macos" scheme="https://huapeng222.github.io/tags/macos/"/>
+    
+    <category term="mac开发" scheme="https://huapeng222.github.io/tags/mac%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="RN" scheme="https://huapeng222.github.io/tags/RN/"/>
+    
+    <category term="react-native" scheme="https://huapeng222.github.io/tags/react-native/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mac开发记录</title>
+    <link href="https://huapeng222.github.io/2023/12/19/mac/mac%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/"/>
+    <id>https://huapeng222.github.io/2023/12/19/mac/mac%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</id>
+    <published>2023-12-19T05:16:21.000Z</published>
+    <updated>2023-12-19T06:10:22.746Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1、设置最小窗口"><a href="#1、设置最小窗口" class="headerlink" title="1、设置最小窗口"></a>1、设置最小窗口</h3><p>如果使用<code>storyboard</code>，直接设置window的最小值：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202312191328337.png" alt="image-20231219132641370"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;1、设置最小窗口&quot;&gt;&lt;a href=&quot;#1、设置最小窗口&quot; class=&quot;headerlink&quot; title=&quot;1、设置最小窗口&quot;&gt;&lt;/a&gt;1、设置最小窗口&lt;/h3&gt;&lt;p&gt;如果使用&lt;code&gt;storyboard&lt;/code&gt;，直接设置window的最小值：&lt;/p</summary>
+      
+    
+    
+    
+    <category term="mac开发" scheme="https://huapeng222.github.io/categories/mac%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="mac" scheme="https://huapeng222.github.io/tags/mac/"/>
+    
+    <category term="macos" scheme="https://huapeng222.github.io/tags/macos/"/>
+    
+    <category term="mac开发" scheme="https://huapeng222.github.io/tags/mac%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
   
   <entry>
     <title>v2Ray部署</title>
@@ -60,11 +120,11 @@
     <category term="命令" scheme="https://huapeng222.github.io/categories/%E5%91%BD%E4%BB%A4/"/>
     
     
+    <category term="终端" scheme="https://huapeng222.github.io/tags/%E7%BB%88%E7%AB%AF/"/>
+    
     <category term="命令" scheme="https://huapeng222.github.io/tags/%E5%91%BD%E4%BB%A4/"/>
     
     <category term="Linux" scheme="https://huapeng222.github.io/tags/Linux/"/>
-    
-    <category term="终端" scheme="https://huapeng222.github.io/tags/%E7%BB%88%E7%AB%AF/"/>
     
     <category term="酸牛奶" scheme="https://huapeng222.github.io/tags/%E9%85%B8%E7%89%9B%E5%A5%B6/"/>
     
@@ -217,11 +277,11 @@
     <category term="iOS" scheme="https://huapeng222.github.io/categories/iOS/"/>
     
     
+    <category term="iOS" scheme="https://huapeng222.github.io/tags/iOS/"/>
+    
     <category term="坐标中心点" scheme="https://huapeng222.github.io/tags/%E5%9D%90%E6%A0%87%E4%B8%AD%E5%BF%83%E7%82%B9/"/>
     
     <category term="swift" scheme="https://huapeng222.github.io/tags/swift/"/>
-    
-    <category term="iOS" scheme="https://huapeng222.github.io/tags/iOS/"/>
     
   </entry>
   
@@ -277,9 +337,9 @@
     <category term="Mac命令" scheme="https://huapeng222.github.io/categories/Mac%E5%91%BD%E4%BB%A4/"/>
     
     
-    <category term="终端" scheme="https://huapeng222.github.io/tags/%E7%BB%88%E7%AB%AF/"/>
-    
     <category term="Mac" scheme="https://huapeng222.github.io/tags/Mac/"/>
+    
+    <category term="终端" scheme="https://huapeng222.github.io/tags/%E7%BB%88%E7%AB%AF/"/>
     
     <category term="github" scheme="https://huapeng222.github.io/tags/github/"/>
     
@@ -306,9 +366,9 @@
     <category term="Mac工具" scheme="https://huapeng222.github.io/categories/Mac%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="iOS" scheme="https://huapeng222.github.io/tags/iOS/"/>
-    
     <category term="Mac" scheme="https://huapeng222.github.io/tags/Mac/"/>
+    
+    <category term="iOS" scheme="https://huapeng222.github.io/tags/iOS/"/>
     
     <category term="USB" scheme="https://huapeng222.github.io/tags/USB/"/>
     
@@ -334,9 +394,9 @@
     <category term="Mac命令" scheme="https://huapeng222.github.io/categories/Mac%E5%91%BD%E4%BB%A4/"/>
     
     
-    <category term="终端" scheme="https://huapeng222.github.io/tags/%E7%BB%88%E7%AB%AF/"/>
-    
     <category term="Mac" scheme="https://huapeng222.github.io/tags/Mac/"/>
+    
+    <category term="终端" scheme="https://huapeng222.github.io/tags/%E7%BB%88%E7%AB%AF/"/>
     
     <category term="shell" scheme="https://huapeng222.github.io/tags/shell/"/>
     

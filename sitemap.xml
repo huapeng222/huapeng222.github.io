@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://huapeng222.github.io/2023/12/22/cordova/cordova%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    
+    <lastmod>2023-12-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://huapeng222.github.io/2023/12/19/RN/RN%20for%20mac%20%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</loc>
     
     <lastmod>2023-12-19</lastmod>
@@ -221,6 +230,20 @@
   </url>
   
   <url>
+    <loc>https://huapeng222.github.io/tags/react-native/</loc>
+    <lastmod>2023-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/tags/%E5%90%B8%E9%A1%B6/</loc>
+    <lastmod>2023-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://huapeng222.github.io/tags/mac/</loc>
     <lastmod>2023-12-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -249,21 +272,35 @@
   </url>
   
   <url>
-    <loc>https://huapeng222.github.io/tags/react-native/</loc>
-    <lastmod>2023-12-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://huapeng222.github.io/tags/%E5%90%B8%E9%A1%B6/</loc>
-    <lastmod>2023-12-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://huapeng222.github.io/tags/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2023-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/tags/cordova/</loc>
+    <lastmod>2023-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/tags/%E5%9D%90%E6%A0%87%E4%B8%AD%E5%BF%83%E7%82%B9/</loc>
+    <lastmod>2023-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/tags/swift/</loc>
+    <lastmod>2023-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/tags/iOS/</loc>
     <lastmod>2023-12-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -291,21 +328,14 @@
   </url>
   
   <url>
+    <loc>https://huapeng222.github.io/tags/ruby/</loc>
+    <lastmod>2023-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://huapeng222.github.io/tags/Mac/</loc>
-    <lastmod>2023-12-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://huapeng222.github.io/tags/iOS/</loc>
-    <lastmod>2023-12-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://huapeng222.github.io/tags/USB/</loc>
     <lastmod>2023-12-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -326,28 +356,14 @@
   </url>
   
   <url>
+    <loc>https://huapeng222.github.io/tags/USB/</loc>
+    <lastmod>2023-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://huapeng222.github.io/tags/shell/</loc>
-    <lastmod>2023-12-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://huapeng222.github.io/tags/ruby/</loc>
-    <lastmod>2023-12-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://huapeng222.github.io/tags/%E5%9D%90%E6%A0%87%E4%B8%AD%E5%BF%83%E7%82%B9/</loc>
-    <lastmod>2023-12-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://huapeng222.github.io/tags/swift/</loc>
     <lastmod>2023-12-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -369,6 +385,27 @@
   
   <url>
     <loc>https://huapeng222.github.io/tags/draw-io/</loc>
+    <lastmod>2023-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/tags/%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2023-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/tags/Linux/</loc>
+    <lastmod>2023-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/tags/%E9%85%B8%E7%89%9B%E5%A5%B6/</loc>
     <lastmod>2023-12-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -403,27 +440,6 @@
   </url>
   
   <url>
-    <loc>https://huapeng222.github.io/tags/%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2023-12-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://huapeng222.github.io/tags/Linux/</loc>
-    <lastmod>2023-12-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://huapeng222.github.io/tags/%E9%85%B8%E7%89%9B%E5%A5%B6/</loc>
-    <lastmod>2023-12-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://huapeng222.github.io/tags/%E9%92%A2%E9%93%81%E9%9B%84%E5%BF%834/</loc>
     <lastmod>2023-12-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -440,6 +456,13 @@
   </url>
   
   <url>
+    <loc>https://huapeng222.github.io/categories/react-native/</loc>
+    <lastmod>2023-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://huapeng222.github.io/categories/mac%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2023-12-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -447,7 +470,14 @@
   </url>
   
   <url>
-    <loc>https://huapeng222.github.io/categories/react-native/</loc>
+    <loc>https://huapeng222.github.io/categories/cordova/</loc>
+    <lastmod>2023-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://huapeng222.github.io/categories/iOS/</loc>
     <lastmod>2023-12-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -461,7 +491,7 @@
   </url>
   
   <url>
-    <loc>https://huapeng222.github.io/categories/Mac%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://huapeng222.github.io/categories/ruby/</loc>
     <lastmod>2023-12-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -475,14 +505,7 @@
   </url>
   
   <url>
-    <loc>https://huapeng222.github.io/categories/ruby/</loc>
-    <lastmod>2023-12-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://huapeng222.github.io/categories/iOS/</loc>
+    <loc>https://huapeng222.github.io/categories/Mac%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2023-12-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -503,14 +526,14 @@
   </url>
   
   <url>
-    <loc>https://huapeng222.github.io/categories/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/</loc>
+    <loc>https://huapeng222.github.io/categories/%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2023-12-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://huapeng222.github.io/categories/%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://huapeng222.github.io/categories/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/</loc>
     <lastmod>2023-12-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

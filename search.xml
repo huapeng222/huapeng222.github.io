@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>cordova常用命令</title>
+      <link href="/2023/12/22/cordova/cordova%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+      <url>/2023/12/22/cordova/cordova%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npx cordova plugin add 插件路径 #安装本地插件</span><br><span class="line">cordova plugin rm com.fivestart.fspush # 移出指定插件</span><br><span class="line">cordova plugin list # 获取已经安装的插件</span><br><span class="line">cordova platform add ios # 给cordova工程添加iOS/android工程</span><br><span class="line">cordova platform remove ios # 移除iOS/android工程</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> cordova </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cordova </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>RN for mac开发记录</title>
       <link href="/2023/12/19/RN/RN%20for%20mac%20%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/"/>
       <url>/2023/12/19/RN/RN%20for%20mac%20%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</url>
@@ -20,6 +45,8 @@
       
         <tags>
             
+            <tag> react-native </tag>
+            
             <tag> mac </tag>
             
             <tag> macos </tag>
@@ -27,8 +54,6 @@
             <tag> mac开发 </tag>
             
             <tag> RN </tag>
-            
-            <tag> react-native </tag>
             
         </tags>
       
@@ -267,11 +292,11 @@
       
         <tags>
             
-            <tag> iOS </tag>
-            
             <tag> 坐标中心点 </tag>
             
             <tag> swift </tag>
+            
+            <tag> iOS </tag>
             
         </tags>
       
@@ -354,9 +379,9 @@
       
         <tags>
             
-            <tag> Mac </tag>
-            
             <tag> iOS </tag>
+            
+            <tag> Mac </tag>
             
             <tag> USB </tag>
             
@@ -522,9 +547,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>友情链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -533,9 +558,9 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

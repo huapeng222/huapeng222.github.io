@@ -6,7 +6,7 @@
   <link href="https://huapeng222.github.io/atom.xml" rel="self"/>
   
   <link href="https://huapeng222.github.io/"/>
-  <updated>2024-03-08T07:43:22.728Z</updated>
+  <updated>2023-12-22T07:11:21.020Z</updated>
   <id>https://huapeng222.github.io/</id>
   
   <author>
@@ -15,26 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="https://huapeng222.github.io/2024/03/08/%E5%AE%89%E5%8D%93/%E5%AE%89%E5%8D%93%E6%97%A5%E5%B8%B8%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/"/>
-    <id>https://huapeng222.github.io/2024/03/08/%E5%AE%89%E5%8D%93/%E5%AE%89%E5%8D%93%E6%97%A5%E5%B8%B8%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</id>
-    <published>2024-03-08T07:43:12.583Z</published>
-    <updated>2024-03-08T07:43:22.728Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="1、gradle下载过慢"><a href="#1、gradle下载过慢" class="headerlink" title="1、gradle下载过慢"></a>1、gradle下载过慢</h3><p>替换为腾讯镜像：<br><a href="https://mirrors.cloud.tencent.com/gradle/">https://mirrors.cloud.tencent.com/gradle/</a><br>把项目内置的gradle地址修改为腾讯镜像，如下图：</p><p><img src="https://img.efivestar.com//acm/e5233db0-7948-4455-a55c-ffa6c80c503b" alt="image.png"></p><p>参考来源：<a href="https://blog.csdn.net/youngwah292/article/details/110734407">gradle不同版本下载太慢—腾讯做了国内镜像可以直接下载</a></p><h3 id="2、fbjni-x2F-fbjni-h-file-not-found"><a href="#2、fbjni-x2F-fbjni-h-file-not-found" class="headerlink" title="2、fbjni&#x2F;fbjni.h file not found"></a>2、fbjni&#x2F;fbjni.h file not found</h3><p>在rn项目中运行时报这个错误。<br>解决方法：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1、关掉Android Studio</span><br><span class="line">2、在android/gradle.properties文件中添加android.disableAutomaticComponentCreation=true</span><br><span class="line">3、重新打开Android Studio编译</span><br></pre></td></tr></table></figure><p>参考来源：<a href="https://stackoverflow.com/questions/75108067/fbjni-fbjni-h-file-not-found-react-native">https://stackoverflow.com/questions/75108067/fbjni-fbjni-h-file-not-found-react-native</a></p><h3 id="3、java-lang-IllegalArgumentException-Empty-bindArg"><a href="#3、java-lang-IllegalArgumentException-Empty-bindArg" class="headerlink" title="3、java.lang.IllegalArgumentException: Empty bindArg"></a>3、java.lang.IllegalArgumentException: Empty bindArg</h3><p>在使用系统自带的sqlite时，报这个错，是因为在execSQL方法中，如果第二个参数为null，就不需要传，传了就会抛出异常。</p><blockquote><p>如果是使用wcdb框架，不会有此问题。</p></blockquote><p>参考来源：<a href="https://blog.csdn.net/pbm863521/article/details/78918849">https://blog.csdn.net/pbm863521/article/details/78918849</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;1、gradle下载过慢&quot;&gt;&lt;a href=&quot;#1、gradle下载过慢&quot; class=&quot;headerlink&quot; title=&quot;1、gradle下载过慢&quot;&gt;&lt;/a&gt;1、gradle下载过慢&lt;/h3&gt;&lt;p&gt;替换为腾讯镜像：&lt;br&gt;&lt;a href=&quot;https://m</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Code Helper占用</title>
@@ -352,6 +332,32 @@
     <category term="swift" scheme="https://huapeng222.github.io/tags/swift/"/>
     
     <category term="iOS" scheme="https://huapeng222.github.io/tags/iOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iOS根据多个坐标点得到中心点</title>
+    <link href="https://huapeng222.github.io/2023/06/06/%E5%AE%89%E5%8D%93/%E5%AE%89%E5%8D%93%E6%97%A5%E5%B8%B8%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/"/>
+    <id>https://huapeng222.github.io/2023/06/06/%E5%AE%89%E5%8D%93/%E5%AE%89%E5%8D%93%E6%97%A5%E5%B8%B8%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</id>
+    <published>2023-06-06T02:50:01.000Z</published>
+    <updated>2024-03-08T07:50:16.439Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1、gradle下载过慢"><a href="#1、gradle下载过慢" class="headerlink" title="1、gradle下载过慢"></a>1、gradle下载过慢</h3><p>替换为腾讯镜像：<br><a href="https://mirrors.cloud.tencent.com/gradle/">https://mirrors.cloud.tencent.com/gradle/</a><br>把项目内置的gradle地址修改为腾讯镜像，如下图：</p><p><img src="https://raw.githubusercontent.com/huapeng222/note_pic/main/md/img202403081549662.png" alt="image.png"></p><p>参考来源：<a href="https://blog.csdn.net/youngwah292/article/details/110734407">gradle不同版本下载太慢—腾讯做了国内镜像可以直接下载</a></p><h3 id="2、fbjni-x2F-fbjni-h-file-not-found"><a href="#2、fbjni-x2F-fbjni-h-file-not-found" class="headerlink" title="2、fbjni&#x2F;fbjni.h file not found"></a>2、fbjni&#x2F;fbjni.h file not found</h3><p>在rn项目中运行时报这个错误。<br>解决方法：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1、关掉Android Studio</span><br><span class="line">2、在android/gradle.properties文件中添加android.disableAutomaticComponentCreation=true</span><br><span class="line">3、重新打开Android Studio编译</span><br></pre></td></tr></table></figure><p>参考来源：<a href="https://stackoverflow.com/questions/75108067/fbjni-fbjni-h-file-not-found-react-native">https://stackoverflow.com/questions/75108067/fbjni-fbjni-h-file-not-found-react-native</a></p><h3 id="3、java-lang-IllegalArgumentException-Empty-bindArg"><a href="#3、java-lang-IllegalArgumentException-Empty-bindArg" class="headerlink" title="3、java.lang.IllegalArgumentException: Empty bindArg"></a>3、java.lang.IllegalArgumentException: Empty bindArg</h3><p>在使用系统自带的sqlite时，报这个错，是因为在execSQL方法中，如果第二个参数为null，就不需要传，传了就会抛出异常。</p><blockquote><p>如果是使用wcdb框架，不会有此问题。</p></blockquote><p>参考来源：<a href="https://blog.csdn.net/pbm863521/article/details/78918849">https://blog.csdn.net/pbm863521/article/details/78918849</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;1、gradle下载过慢&quot;&gt;&lt;a href=&quot;#1、gradle下载过慢&quot; class=&quot;headerlink&quot; title=&quot;1、gradle下载过慢&quot;&gt;&lt;/a&gt;1、gradle下载过慢&lt;/h3&gt;&lt;p&gt;替换为腾讯镜像：&lt;br&gt;&lt;a href=&quot;https://m</summary>
+      
+    
+    
+    
+    <category term="Android" scheme="https://huapeng222.github.io/categories/Android/"/>
+    
+    
+    <category term="Android" scheme="https://huapeng222.github.io/tags/Android/"/>
+    
+    <category term="安卓" scheme="https://huapeng222.github.io/tags/%E5%AE%89%E5%8D%93/"/>
     
   </entry>
   
